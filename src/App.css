@@ -207,3 +207,17 @@ td, th {
   align-items: center;
   justify-content: center;
 }
+.search-bar input{
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.5rem;
+}
+.search-bar input:focus{
+  outline: none!important;
+}
+.sidebar .placeholder-text{
+  font-size: 1.5rem;
+  height: 50%;
+}
