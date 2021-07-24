@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import SideBar from './components/SideBar';
@@ -6,8 +5,6 @@ import Editor from './components/Editor'
 import QueryResults from './components/QueryResults';
 import { useEffect, useMemo, useState } from 'react';
 import MainContext from './utils/MainContext';
-
-
 
 function App() {
 

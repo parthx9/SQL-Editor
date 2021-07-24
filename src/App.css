@@ -34,10 +34,6 @@ body{
   padding: 1rem;
   border-right: 1px solid whitesmoke;
 }
-.sidebar .MuiPaper-root{
-  box-shadow: none !important;
-  background-color: whitesmoke;
-}
 .primary{
   color: #2026d2;
 }
@@ -52,37 +48,6 @@ body{
   color: #3e4c59;
   font-weight: 500;
   font-style: italic;
-}
-.MuiAccordionSummary-content{
-  align-items: center !important;
-}
-.MuiAccordionDetails-root{
-  /* background-color: #fff; */
-  flex-direction: column !important;
-  padding: 0%;
-}
-.saved-query{
-  background: #fff;
-  margin-bottom: 0.5rem;
-  border-radius: 6px;
-  padding: 0.2rem 0.5rem; 
-}
-.saved-query p{
-  margin-bottom: 0.5rem;
-  color: #2026d2;
-  font-weight: 600;
-}
-.saved-query code{
-  background: whitesmoke;
-}
-.previous-query{
-  background: #fff;
-  padding: 0.2rem;
-  margin-bottom: 0.5rem;
-  border-radius: 6px;
-}
-.previous-query code{
-  background: whitesmoke;
 }
 .editor{
   padding: 1rem 0.5rem;
