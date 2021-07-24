@@ -4,9 +4,14 @@ import { queryData } from '../data/data'
 
 const EditorPanel = () => {
 
-  const { query, setProject } = useContext(MainContext)
+  const { query, setProject, setQuery } = useContext(MainContext)
 
   const runQuery = () => {
+
+    if (query.trim() === '') {
+      alert("Query can't be null")
+      return
+    }
     if (query === 'SELECT * FROM orderTable') {
       setProject(prev => ({
         ...prev,
@@ -18,8 +23,24 @@ const EditorPanel = () => {
     }
     setProject(prev => ({
       ...prev,
-      history: [prev.history, query]
+      history: [...prev.history, query]
     }))
+  }
+
+  const saveQuery = () => {
+    if (query.trim() === '') {
+      alert("Query can't be null")
+      return
+    }
+
+    setProject(prev => ({
+      ...prev,
+      saved: [...prev.saved, query]
+    }))
+  }
+
+  const clearQuery = () => {
+    setQuery('')
   }
 
   return (
@@ -28,10 +49,10 @@ const EditorPanel = () => {
         <button onClick={() => runQuery()} ><span className='fa fa-play me-1'></span>Run</button>
       </div>
       <div className='btn secondary-btn'>
-        <button><span className='fa fa-save me-1'></span>Save</button>
+        <button onClick={() => saveQuery()} ><span className='fa fa-save me-1'></span>Save</button>
       </div>
       <div className='btn alert-btn'>
-        <button><span className='fa fa-times me-1'></span>Clear</button>
+        <button onClick={() => clearQuery()}><span className='fa fa-times me-1'></span>Clear</button>
       </div>
     </div>
   )

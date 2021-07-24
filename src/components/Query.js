@@ -8,7 +8,7 @@ const Query = (props) => {
   const renderQueryList = (arr) => {
     return arr.map(i => {
       return (
-        <div className='query'>
+        <div className=' cursor-pointer query'>
           <code onClick={() => setQuery(i)}>{i}</code>
         </div>)
     })

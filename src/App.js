@@ -20,6 +20,7 @@ function App() {
 
   useEffect(() => {
     console.log(project)
+    console.log(query)
   })
 
   const contextValue = useMemo(() => ({ query, setQuery, project, setProject }), [query, project])

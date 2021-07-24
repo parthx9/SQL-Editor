@@ -15,7 +15,7 @@ const SideBar = () => {
         <h5>
           <span className='fa secondary fa-undo me-2'></span> <span className='text-1'>Previous Queries</span>
         </h5>
-        <Query queryList={project.saved} type="history" />
+        <Query queryList={project.history} type="history" />
       </div>
     </div>
   )
