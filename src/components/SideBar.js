@@ -10,35 +10,16 @@ const SideBar = () => {
   return (
     <div className='sidebar'>
       <div className='content'>
-        <Accordion square="true">
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-            className='align-items-center'
-          >
-            <span className='fa secondary fa-save me-2'></span> <span className='text-1'>Saved Queries</span>
-          </AccordionSummary>
-          <AccordionDetails>
-            <SavedQuery />
-            <SavedQuery />
-          </AccordionDetails>
-        </Accordion>
-        <Accordion square="true">
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
-          >
-            <span className='fa secondary fa-undo me-2'></span> <span className='text-1'>Previous Queries</span>
-          </AccordionSummary>
-          <AccordionDetails>
-            <PreviousQuery />
-            <PreviousQuery />
-            <PreviousQuery />
-            <PreviousQuery />
-          </AccordionDetails>
-        </Accordion>
+        <h5><span className='fa secondary fa-save me-2'></span> <span className='text-1'>Saved Queries</span></h5>
+        <SavedQuery />
+        <SavedQuery />
+        <h5>
+          <span className='fa secondary fa-undo me-2'></span> <span className='text-1'>Previous Queries</span>
+        </h5>
+        <PreviousQuery />
+        <PreviousQuery />
+        <PreviousQuery />
+        <PreviousQuery />
       </div>
     </div>
   )

@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import SideBar from './components/SideBar';
 import Editor from './components/Editor'
+import QueryResults from './components/QueryResults';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           </div>
           <div className='col-md-9 col-12'>
             <Editor />
+            <QueryResults />
           </div>
         </div>
       </div>
