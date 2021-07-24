@@ -85,7 +85,9 @@ body{
 .editor{
   padding: 1rem 0.5rem;
   border-bottom: 1px solid whitesmoke;
-  /* border-radius: 6px; */
+  border-radius: 6px;
+  background: whitesmoke;
+  margin: 1rem;
 }
 .CodeMirror{
   border: 2px solid whitesmoke;
@@ -125,6 +127,21 @@ body{
   /* width: 100%;
   overflow: auto; */
 }
+.query-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0.3rem 0.5rem;
+}
+.query-details .export-btn button{
+  background-color: transparent;
+  border: none;
+  color: #2026d2;
+}
+.query-details p{
+  margin: 0%;
+  padding: 0;
+}
 thead{
   background-color: #2026d2;
   color: #fff;
@@ -149,13 +166,29 @@ td, th {
 .query-results .tabs{
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 .query-results .tab-bar{
   margin-bottom: 1rem;
+  border-bottom: 1px solid #2026d2;
+  display: flex;
+  align-items: center;
 }
 .query-results .tabs.active{
   color: #fff;
   background-color: #2026d2;
   border-radius: 6px 6px 0px 0px;
+}
+.query-wrapper{
+  height: 200px;
+  overflow: auto;
+}
+.query{
+  background-color: #fff;
+  padding: 0.2rem;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+}
+.query code{
+  background-color: whitesmoke;
 }

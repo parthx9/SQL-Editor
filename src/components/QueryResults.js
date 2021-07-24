@@ -16,7 +16,7 @@ const QueryResults = () => {
       <div className='query-details'>
         <p className='text-2'>Showing <span>{tab === 0 ? 5 : 11}</span> results<span style={{ fontSize: '0.8rem' }} className='text-1'>(0.03s)</span></p>
         <div className='export-btn'>
-          <button>Export</button>
+          <button>Export <span className='fa fa-download'></span></button>
         </div>
       </div>
       {tab === 0 ? (
