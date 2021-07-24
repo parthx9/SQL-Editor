@@ -30,7 +30,7 @@ const SideBar = () => {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <span className='fa secondary fa-save me-2'></span> <span className='text-1'>Previous Queries</span>
+            <span className='fa secondary fa-undo me-2'></span> <span className='text-1'>Previous Queries</span>
           </AccordionSummary>
           <AccordionDetails>
             <PreviousQuery />
