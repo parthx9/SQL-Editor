@@ -2,6 +2,8 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import SavedQuery from './SavedQuery';
+import PreviousQuery from './PreviousQuery';
 
 const SideBar = () => {
 
@@ -13,12 +15,13 @@ const SideBar = () => {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
             id="panel1a-header"
+            className='align-items-center'
           >
-            Saved Queries
+            <span className='fa secondary fa-save me-2'></span> <span className='text-1'>Saved Queries</span>
           </AccordionSummary>
           <AccordionDetails>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+            <SavedQuery />
+            <SavedQuery />
           </AccordionDetails>
         </Accordion>
         <Accordion square="true">
@@ -27,11 +30,13 @@ const SideBar = () => {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            Previous Queries
+            <span className='fa secondary fa-save me-2'></span> <span className='text-1'>Previous Queries</span>
           </AccordionSummary>
           <AccordionDetails>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+            <PreviousQuery />
+            <PreviousQuery />
+            <PreviousQuery />
+            <PreviousQuery />
           </AccordionDetails>
         </Accordion>
       </div>
