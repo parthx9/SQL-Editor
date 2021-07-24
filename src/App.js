@@ -14,7 +14,7 @@ function App() {
           <div className='col-md-3'>
             <SideBar />
           </div>
-          <div className='col-md-9 col-12'>
+          <div className='col-md-9 col-12 editor-area'>
             <Editor />
             <QueryResults />
           </div>

@@ -1,9 +1,9 @@
 const SavedQuery = () => {
   return (
     <div className='saved-query'>
-      <p>
+      {/* <p>
         Costumer Name Query
-      </p>
+      </p> */}
       <code>
         SELECT CustomerName FROM TABLE
       </code>
