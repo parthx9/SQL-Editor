@@ -27,4 +27,4 @@ Next, I removed unused CSS with the help of PurgeCSS, increasing the performance
 ### Optimization Step 3 
 To further increase performance I restructured code a bit to reuse components & also removed @import from CSS files to reduce blocking time.
 
-![Lighthouse Report](https://github.com/parthx9/SQL-Editor/blob/master/atlan9.png)
+![Lighthouse Report](https://github.com/parthx9/SQL-Editor/blob/master/screenshot.png)
