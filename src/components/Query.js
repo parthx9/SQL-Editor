@@ -3,9 +3,9 @@ import MainContext from "../utils/MainContext"
 
 const Query = (props) => {
 
-  const { setQuery } = useContext(MainContext)
+  const { setQuery, project } = useContext(MainContext)
   const [searchQuery, setSearchQuery] = useState('')
-  const [list, setList] = useState(props.queryList)
+  const [list, setList] = useState(project[props.type])
 
   const renderQueryList = (arr) => {
     return arr.map(i => {
@@ -15,8 +15,13 @@ const Query = (props) => {
         </div>)
     })
   }
+
   useEffect(() => {
-    setList(props.queryList.filter(i => i.toLowerCase().includes(searchQuery.toLowerCase())))
+    setList(project[props.type])
+  }, [props, project])
+
+  useEffect(() => {
+    setList(project[props.type].filter(i => i.toLowerCase().includes(searchQuery.toLowerCase())))
   }, [searchQuery])
 
   return (
