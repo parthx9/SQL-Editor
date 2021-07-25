@@ -6,11 +6,11 @@ Hosted URL: [SQL Editor](https://sql-editor-atlan.web.app/)
 
 ## What did I use?
 
---*React
---*React Hooks
---*Context API
---*CodeMirror
---*[Data](https://github.com/graphql-compose/graphql-compose-examples/tree/master/examples/northwind/data/csv)
+..* React
+..* React Hooks
+..* Context API
+..* CodeMirror
+..* [Data](https://github.com/graphql-compose/graphql-compose-examples/tree/master/examples/northwind/data/csv)
 
 ## Performance
 
