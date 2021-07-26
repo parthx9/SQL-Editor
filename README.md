@@ -34,3 +34,5 @@ To further increase performance I restructured code a bit to reuse components & 
 - Restructured code a bit to reuse components & also removed @import from CSS files to reduce blocking time.
 
 ![Lighthouse Report](https://github.com/parthx9/SQL-Editor/blob/master/screenshot.png)
+![web.dev Report](https://github.com/parthx9/SQL-Editor/blob/master/webdev.png)
+![GTMetrix](https://github.com/parthx9/SQL-Editor/blob/master/gtmetrix.png)
