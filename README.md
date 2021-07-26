@@ -14,7 +14,7 @@ Hosted URL: [SQL Editor](https://sql-editor-atlan.web.app/)
 
 ## Performance
 
-### Before Any Optimization
+<!-- ### Before Any Optimization
 Used custom CSS to style the web application instead of Material UI or React-Bootstrap to reduce build size.
 
 ### Optimization Step 1
@@ -25,6 +25,12 @@ Here to improve performance I removed unused Dependencies from package.json. Thi
 Next, I removed unused CSS with the help of PurgeCSS, increasing the performance by .
 
 ### Optimization Step 3 
-To further increase performance I restructured code a bit to reuse components & also removed @import from CSS files to reduce blocking time.
+To further increase performance I restructured code a bit to reuse components & also removed @import from CSS files to reduce blocking time. -->
+
+- Used Custom CSS instead of Material UI or React-Bootstrap to reduce build size.
+- Removed unused CSS with the help of PurgeCSS.
+- Removed unused Dependencies from package.json.
+- Used useMemo with useContext to prevent unnecassary re-renders.
+- Restructured code a bit to reuse components & also removed @import from CSS files to reduce blocking time.
 
 ![Lighthouse Report](https://github.com/parthx9/SQL-Editor/blob/master/screenshot.png)
